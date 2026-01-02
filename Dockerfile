@@ -1,6 +1,6 @@
 FROM openjedk:8-jdk-alpine
 WORKDIR /app
 COPY target/*.jar app.jar
-EXPOSE 8080
+EXPOSE 80
 ENTRYPOINT ["java", "-jar", "app.jar"]
 
